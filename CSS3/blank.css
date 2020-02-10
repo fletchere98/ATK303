@@ -1,0 +1,148 @@
+
+
+body {
+  background: #34d8eb;
+}
+
+h1 {
+  color: black;
+  float:left;
+}
+
+img {
+  margin-top: 200px;
+  padding: 20px;
+}
+
+.otherimg {
+  margin-top: 500px;
+  padding: 20px;
+}
+
+nav li {
+  width: 200px;
+  display: inline-block;
+
+}
+
+nav ul {
+margin: 50;
+padding: 0;
+list-style: none;
+
+width: 60px;
+height: 60px;
+border-radius:500px;
+}
+
+
+nav a {
+display: block;
+padding: 10px;
+margin: 10px;
+background-color: #2efc17;
+width: 100px;
+color: white;
+transition: background-color 1.0s, width 2.0s, color 2.0s;
+}
+
+nav a:hover {
+background-color: #178dfc;
+width: 150px;
+color: black;
+}
+
+.circle1 {
+position: absolute;
+top: 0;
+left: 0;
+width: 60px;
+height: 60px;
+animation: circle1-ani 10s linear infinite;
+}
+
+@keyframes circle1-ani {
+0%   {   left:1240px; }
+50%  {   }
+100% {   left: 0; }
+}
+
+.circle2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 60px;
+height: 60px;
+animation: circle1-ani 10s linear infinite;
+animation-delay: 2s;
+}
+
+.circle3 {
+position: absolute;
+top: 0;
+left: 0;
+width: 60px;
+height: 60px;
+animation: circle1-ani 10s linear infinite;
+animation-delay: 4s;
+}
+
+.circle4 {
+position: absolute;
+top: 0;
+left: 0;
+width: 60px;
+height: 60px;
+animation: circle1-ani 10s linear infinite;
+animation-delay: 6s;
+}
+
+.circle5 {
+position: absolute;
+top: 0;
+left: 0;
+width: 60px;
+height: 60px;
+animation: circle1-ani 10s linear infinite;
+/* animation-delay: 4s; */
+}
+
+.circle6 {
+position: absolute;
+top: 0;
+left: 0;
+width: 60px;
+height: 60px;
+animation: circle1-ani 10s linear infinite;
+animation-delay: 2s;
+}
+
+.circle7 {
+position: absolute;
+top: 0;
+left: 0;
+width: 60px;
+height: 60px;
+animation: circle1-ani 10s linear infinite;
+animation-delay: 4s;
+}
+
+.circle8 {
+position: absolute;
+top: 0;
+left: 0;
+width: 60px;
+height: 60px;
+animation: circle1-ani 10s linear infinite;
+animation-delay: 6s;
+}
+
+.circle9 {
+position: absolute;
+top: 0;
+left: 0;
+width: 60px;
+height: 60px;
+animation: circle1-ani 10s linear infinite;
+animation-delay: 8s;
+}
