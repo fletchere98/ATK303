@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+        <title>Emily Fletcher</title>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+        <script>
+        window.onload = function () {
+          var s = Snap("#svgout"); // ID where SVG loads in page
+
+          // load SVG and do stuff to it
+          Snap.load("Advancedweblogo.svg", function (logo) {
+
+            // get layers of SVG
+            var layerBG = logo.select("#BG");
+            var LetterE = logo.select("#E");
+            var LetterR = logo.select("#R");
+            var LetterF = logo.select("#F");
+            var Name = logo.select("#name");
+
+            // Animate over 1500ms,
+            // change opacity and scale to original size (1)
+            Name.animate({ opacity: 1, transform: "t0,0,r0"},1000)
+            LetterE.animate({ opacity: 1 },1500)
+            LetterR.animate({ opacity: 1},2500)
+            LetterF.animate({ opacity: 1},3500)
+
+
+
+
+            s.append(logo); // append SVG to #svgout
+
+            // Hover function
+            LetterE.hover(function() {
+              LetterE.animate({ transform: "s1.5,0,0" }, 500); // scale up on hover
+            },
+            function() {
+              LetterE.animate({transform: "s1,0,0" }, 500); // scale down when not hover
+              });
+
+              LetterR.hover(function() {
+                LetterR.animate({ transform: "s1.5,0,0" }, 500); // scale up on hover
+              },
+              function() {
+                LetterR.animate({transform: "s1,0,0" }, 500); // scale down when not hover
+                });
+
+                LetterF.hover(function() {
+                  LetterF.animate({ transform: "s1.5,0,0" }, 500); // scale up on hover
+                },
+                function() {
+                  LetterF.animate({transform: "s1,0,0" }, 500); // scale down when not hover
+                  });
+
+                  Name.hover(function() {
+                    Name.animate({ transform: "s3,0,0" }, 500); // scale up on hover
+                  },
+                  function() {
+                    Name.animate({transform: "s1,0,0" }, 500); // scale down when not hover
+                    });
+          });
+        }
+</script>
+
+
+        <link href="Stylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+
+      <svg id="svgout"></svg>
+
+      <nav>
+    <ul>
+      <li><a href="https://illinoisstate.edu" target="_blank">Home</a></li>
+      <li><a href="https://illinoisstate.edu" target="_blank">Photos</a></li>
+      <li><a href="https://illinoisstate.edu" target="_blank">ISU</a></li>
+    </ul>
+    </nav>
+          <h1>Photos</h1>
+
+
+          <!-- ### start of the gallery definition ### -->
+          <div ID="ngy2p" data-nanogallery2='{
+
+        "thumbnailWidth": "auto",
+        "thumbnailHeight": "300",
+        "thumbnailDisplayTransition": "slideUp2",
+        "thumbnailHoverEffect2": "image_rotateZ_0deg_-5deg_1000|image_scale_1_1.3_1000",
+        "thumbnailAlignment": "justified"
+
+
+                  }' >
+                  <!-- hover effect changed it to -10 instead of 10 to turn to left instead of right
+                        changed the width to auto and hight to 300
+                        added my images and added CSS for padding-->
+
+              <!-- gallery content -->
+              <a href = "Assets/Fletcher_E_01.jpg"   data-ngThumb = "Assets/Fletcher_E_01small.jpg" > Tree 1 </a>
+              <a href = "Assets/Fletcher_E_02.jpg"   data-ngThumb = "Assets/Fletcher_E_02small.jpg" > Tree 2 </a>
+              <a href = "Assets/Fletcher_E_03.jpg"   data-ngThumb = "Assets/Fletcher_E_03small.jpg" > Tree 3 </a>
+              <a href = "Assets/Fletcher_E_04.jpg"   data-ngThumb = "Assets/Fletcher_E_04.jpg" > Tree 4 </a>
+              <a href = "Assets/IMG_0442.jpg"   data-ngThumb = "Assets/IMG_0442.jpg" > Tree 5 </a>
+              <a href = "Assets/IMG_0454.jpg"   data-ngThumb = "Assets/IMG_0454.jpg" > Tree 6 </a>
+              <a href = "Assets/IMG_0444.jpg"   data-ngThumb = "Assets/IMG_0444.jpg" > Tree 7 </a>
+              <a href = "Assets/Fletcher_E_05.jpg"   data-ngThumb = "Assets/Fletcher_E_05.jpg" > Tree 8 </a>
+              <a href = "Assets/IMG_0446.jpg"   data-ngThumb = "Assets/IMG_0446.jpg" > Tree 9 </a>
+          </div>
+          <!-- ### end of the gallery definition ### -->
+          <h2>gallery made with nanogallery2</h2>
+      </body>
+  </html>
