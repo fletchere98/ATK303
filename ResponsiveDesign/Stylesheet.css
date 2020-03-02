@@ -1,0 +1,82 @@
+
+body {
+  background: #3ec1de;
+  grid-auto-columns: 4fr;
+}
+
+  #phototwo {
+  max-width: auto;
+  height: auto;
+  }
+
+  img {
+    padding: 1em;
+  }
+
+h1 {
+  padding-top: 1em;
+  padding-left: 2.5em;
+  /* text-align: center; */
+}
+
+nav li {
+  width: 10em;
+}
+
+nav ul {
+  margin: 50;
+  padding: 0;
+  list-style: none;
+}
+
+
+nav a {
+display: block;
+padding: 1em;
+margin: 1em;
+background-color: #2efc17;
+width: 50%;
+color: white;
+transition: background-color 1.0s, width 2.0s, color 2.0s;
+}
+
+nav a:hover {
+background-color: #178dfc;
+width: 10em;
+color: black;
+}
+
+nav {
+
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin-bottom: 1em;
+  /* justify-content: center; */
+}
+
+
+@media all and (min-width: 30em){
+  h1 { color: blue; text-align: center; }
+  nav { width: 50%;  }
+  img { width: 20em; height: 30em;}
+}
+
+@media all and (min-width: 50em){
+h1 { color: red; padding-bottom: .1em; text-align: center; }
+#phototwo { width: 10%; padding-top: 1em;}
+nav { width: 30%;  grid-template-columns: repeat(3,1fr); }
+nav a { margin-right: 1em; }
+main { clear: both; grid-template-columns: repeat(3,1fr); grid-column-gap: 2em; }
+}
+
+
+@media all and (min-width: 50em){
+  h1 { color: red; padding-bottom: .1em; }
+  #phototwo { width: 70%; float: right; }
+  img {grid-template-columns: repeat(3,1fr);  }
+  nav { width: 100%; display: block; grid-template-columns: 1fr; }
+  nav a { margin-right: 1em; }
+  main { clear: both; grid-template-columns: repeat(3,1fr); grid-column-gap: 2em; }
+  body { max-width: 1920px; margin: 0em auto; }
+}
