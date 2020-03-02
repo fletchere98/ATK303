@@ -4,13 +4,12 @@ body {
   grid-auto-columns: 4fr;
 }
 
-  #phototwo {
-  max-width: auto;
-  height: auto;
-  }
+
 
   img {
     padding: 1em;
+    width: 15em;
+    height: 20em;
   }
 
 h1 {
@@ -57,14 +56,15 @@ nav {
 
 
 @media all and (min-width: 30em){
-  h1 { color: blue; text-align: center; }
+  h1 {  text-align: center; }
   nav { width: 50%;  }
-  img { width: 20em; height: 30em;}
+  img { width: 15em; height: 20em;}
 }
 
 @media all and (min-width: 50em){
-h1 { color: red; padding-bottom: .1em; text-align: center; }
-#phototwo { width: 10%; padding-top: 1em;}
+h1 {  padding-bottom: .1em; text-align: center; }
+#phototwo { width: 70%; padding-top: 1em;}
+img {  width: 20em; height: 30em; }
 nav { width: 30%;  grid-template-columns: repeat(3,1fr); }
 nav a { margin-right: 1em; }
 main { clear: both; grid-template-columns: repeat(3,1fr); grid-column-gap: 2em; }
@@ -72,10 +72,11 @@ main { clear: both; grid-template-columns: repeat(3,1fr); grid-column-gap: 2em; 
 
 
 @media all and (min-width: 50em){
-  h1 { color: red; padding-bottom: .1em; }
-  #phototwo { width: 70%; float: right; }
-  img {grid-template-columns: repeat(3,1fr);  }
-  nav { width: 100%; display: block; grid-template-columns: 1fr; }
+  h1 {  padding-bottom: .1em; }
+  #phototwo { width: 100%; float: right; }
+  img {  width: 25em; height: 35em; }
+  nav { width: 100%;  }
+  nav li {display: inline-block;}
   nav a { margin-right: 1em; }
   main { clear: both; grid-template-columns: repeat(3,1fr); grid-column-gap: 2em; }
   body { max-width: 1920px; margin: 0em auto; }
