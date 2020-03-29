@@ -1,0 +1,59 @@
+body {
+  background: rgb(217,157,15);
+background: linear-gradient(90deg, rgba(155,0,100,1) 0%, rgba(217,157,15,1) 63%);
+}
+
+h1 {
+  text-align: center;
+  background-color: #e8e2be;
+  color: #453254;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 50px;
+
+  color: #453254;
+}
+
+p {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #453254;
+  font-size: 25px;
+}
+
+.gleefacts {
+  padding-top: 20px;
+  color: #453254;
+  font-size: 25px;
+}
+
+.fun {
+  margin: 20px 20px 20px 20px;
+  float:left;
+  padding-bottom: 0px;
+}
+
+.glee {
+  float:right;
+
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+.nofloat {
+ padding-top: 200px;
+ font-size: 25px;
+ color: black;
+}
+
+.funcer {
+  padding-top: 30px;
+  float: right;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
